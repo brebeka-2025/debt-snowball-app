@@ -14,7 +14,7 @@ total_budget = base_budget + extra_budget
 st.sidebar.markdown(f"**Total Snowball Budget:** ${total_budget:,.2f}")
 
 st.header("Enter Your Debts")
-debt_df = st.experimental_data_editor(
+debt_df = st.data_editor(
     pd.DataFrame({
         "Debt Name": ["Credit Card A", "Credit Card B"],
         "Starting Balance": [1500, 3000],
